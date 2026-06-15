@@ -1,0 +1,42 @@
+{
+  "name": "biyesheji-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:prod": "vue-tsc -p tsconfig.build.json --noEmit && vite build",
+    "preview": "vite preview",
+    "backend:dev": "cd backend && npm run dev",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts,.vue",
+    "format": "prettier --write \"src/**/*.{ts,vue}\""
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.2",
+    "@phosphor-icons/vue": "^2.0.3",
+    "axios": "^1.8.4",
+    "chart.js": "^4.5.1",
+    "gsap": "^3.12.5",
+    "pinia": "^2.3.1",
+    "vue": "^3.5.13",
+    "vue-chartjs": "^5.3.3",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/eslint-config-typescript": "^14.1.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.4.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.18.0",
+    "vite": "^6.2.2",
+    "vitest": "^2.1.4",
+    "vue-tsc": "^2.2.8"
+  }
+}
